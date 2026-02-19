@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+
+<link rel="stylesheet" href="style.css">
+
+
+
+
+ <link rel="icon" type="image/png" sizes="128x128" href="images/icon.png">
+
+
+
+
+
+
+<title> Cagla Gürer Website</title>
+    </head>
+
+
+
+
+    <link rel="icon" type="image/x-icon" href="images/Cagla.ico">
+<body>
+<header>
+
+
+  <video class="videoplays" loop muted src="images/Homevidbetter.mp4"></video>
+  <button id="button" class="herobtn">Cagla Gürer</button>
+  <div class="animationbegin"></div>
+
+
+
+
+<audio src="images/sound.mp3" id="clickSound"></audio>
+
+
+<script>
+
+
+
+function playAudio( ){
+    const clickSound = document.getElementById("clickSound");
+    clickSound.play();
+}
+const button = document.getElementById("button");
+button.addEventListener("click", playAudio);
+
+
+
+
+
+</script>
+  <script>
+  const btn = document.getElementsByClassName("herobtn")[0];
+  const sprite = document.getElementsByClassName("animationbegin")[0];
+  const video = document.querySelector('.videoplays');
+
+  btn.addEventListener("click", function() {
+    // restart sprite animation
+    sprite.classList.remove("animate");
+    void sprite.offsetWidth; // force reflow so animation restarts
+    sprite.classList.add("animate");
+
+    // restart and play header video
+    if (video) {
+      video.currentTime = 0;
+      video.play().catch(() => {
+        // autoplay may be blocked; keep it muted to allow play in most browsers
+        video.muted = true;
+        video.play().catch(() => {});
+      });
+    }
+  });
+
+  // Remove the class after animation ends so it can be replayed on next click
+  sprite.addEventListener("animationend", function() {
+    sprite.classList.remove("animate");
+  });
+  </script>
+
+</header>
+ 
+<navigator>
+
+
+
+</navigator>
+
+<main>
+  <h2 id="clickSound" class="text4">Projekte</h2>
+  <a    href="abtme2.html"    > 
+
+
+
+
+  <div class="project-container">Schulprojekt Java</div>
+</a>
+
+<a>
+<div class="project-container1"> </div>
+
+
+    
+
+
+    <a href="abtme.html"><div class="project-container2"> Schulprojekt </div> 
+
+    </a>
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</main>
+
+<article>
+  <!-- Aticle content goes here -->
+   
+<div class="textbox">
+<h1 id="txt2" class="txt2">Über mich</h1>
+
+<p> Ich bin Cagla Gürer, 19 Jahre alt, kreativ, neugierig und hochmotiviert.  
+Schon früh habe ich gemerkt, wie sehr mich Technik, Problemlösung und digitales Arbeiten faszinieren.  
+Deshalb möchte ich eine Ausbildung als Informatikerin beginnen – ein Bereich, in dem ich meine Stärken perfekt einsetzen kann.
+
+Ich arbeite zielstrebig, lerne schnell und habe keine Angst vor neuen Herausforderungen.  
+Im Gegenteil: Neues auszuprobieren und mich weiterzuentwickeln motiviert mich jeden Tag.  
+Mein Ziel ist es, mit Leidenschaft und Einsatz zu zeigen, dass ich eine Auszubildende bin, die Verantwortung übernimmt, mitdenkt und mit Begeisterung an Projekten arbeitet.
+
+Ich freue mich darauf, Ausbilder mit meiner Motivation, meinem Engagement und meiner Lernbereitschaft zu überzeugen.
+  </p>
+</p>
+
+
+<div class="icon" href="images/icon.png"></div> 
+
+
+<div class="me1"  href="images/me1.png"></div> 
+
+</div>
+
+
+
+
+
+
+
+</article>
+
+<footer>
+  <h1 id="txt1" class="txt1">Email me on Cagla.guerer@outlook.com</h1>
+
+  <div class="Cagla">
+
+<a id="clickSound" class="DownloadAnschreiben" href="images/Anschreiben_Cagla_Gürer.pdf" download>
+  Download Anschreiben
+</a>
+<a id="clickSound" class="DownloadLebenslauf" href="images/Lebenslauf_Praktikum_Cagla_Gürer.pdf" download>
+  Lebenslauf
+</a>
+
+
+<a id="clickSound" class="DownloadZeugnis" href="images/Zeugnis.pdf" download>
+  Zeugnis Teil 1
+</a>
+
+
+<a id="clickSound" class="DownloadZeugnis2" href="images/Zeugnis2.pdf" download>
+  Zeugnis Teil 2
+</a>
+
+
+
+
+  </div>
+
+
+
+
+
+</footer>
+
+
+</body>
+</html>

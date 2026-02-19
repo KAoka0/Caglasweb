@@ -1,0 +1,50 @@
+header {
+background-color: lightpink;
+height: 200px;
+width: 2000px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 20px;
+box-sizing: border-box;
+}
+.goback {
+font-size: 20px;
+border-radius: 15px;
+background-color: lightcoral;
+height: 60px;
+width: 120px;
+padding: 10px 20px;
+cursor: pointer;
+border: none;
+transform: translate(-100px,0);
+}
+
+
+.goback:hover {
+    background-color: lightcoral;
+}
+.goback:active {
+    background-color: lightpink;
+    transform: translate(-100px,0) scale(0.95);
+}
+
+
+
+
+.text1{
+    font-family: Arial, sans-serif;
+    font-size: 100px;;
+    color: rgb(121, 64, 53);
+}
+
+
+
+
+main {
+
+height: 500px;
+width: 1000px;
+background-color: lightblue;
+
+}
